@@ -9,7 +9,7 @@
       <option value="">All Categories</option>
       <option value="cloths">Cloths</option>
       <option value="electronics">Electronics</option>
-      <!-- Add other category options as needed -->
+      
     </select>
     <button type="submit">Apply Filter</button>
   </form>
@@ -18,14 +18,14 @@
     <thead>
       <tr>
         <th>Product Name</th>
-        <!-- Add other table headers as needed -->
+        
       </tr>
     </thead>
     <tbody>
       {% for product in dashboard.page_obj %}
         <tr>
           <td>{{ product.name }}</td>
-          <!-- Add other table cells as needed -->
+          
         </tr>
       {% endfor %}
     </tbody>

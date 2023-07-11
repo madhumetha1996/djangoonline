@@ -51,19 +51,18 @@ INSTALLED_APPS = [
 ]
 
 
-# Include the REST framework's authentication and permission classes
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
-        # Other authentication classes if needed
+        
     ],
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
-        # Other permission classes if needed
+       
     ],
 }
 
-# Simple JWT settings
+
 from datetime import timedelta
 
 SIMPLE_JWT = {

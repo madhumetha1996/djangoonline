@@ -12,7 +12,7 @@ class Category(models.Model):
 class Product(models.Model):
     name = models.CharField(max_length=100)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
-    # Add other fields as per your requirements
+   
 
     def __str__(self):
         return self.name
@@ -20,7 +20,6 @@ class Product(models.Model):
 
 class Shop(models.Model):
     name = models.CharField(max_length=100)
-    # Add other fields as per your requirements
-
+    
     def __str__(self):
         return self.name

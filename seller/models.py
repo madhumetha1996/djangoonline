@@ -5,7 +5,7 @@ class Seller(models.Model):
     email = models.EmailField(unique=True)
     password = models.CharField(max_length=100)
 
-    # Add other fields as per your requirements
+    
 
     def __str__(self):
         return self.name

@@ -26,11 +26,11 @@ def order_update(request, pk):
         form = OrderForm(request.POST, instance=order)
         if form.is_valid():
             form.save()
-            # Add any additional logic or redirect
+           
     else:
         form = OrderForm(instance=order)
     return render(request, 'orders/order_update.html', {'form': form})
 
 def order_statistics(request):
-    # Implement logic to calculate order statistics
+   
     return render(request, 'orders/order_statistics.html')

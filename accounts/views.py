@@ -44,10 +44,10 @@ def profile(request):
 @login_required
 def edit_profile(request):
     if request.method == 'POST':
-        # Process the form submission and update the user profile
+        
         pass
     else:
-        # Display the form to edit the user profile
+        
         pass
 
 def logout_view(request):
